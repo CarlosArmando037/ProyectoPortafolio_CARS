@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\PortafolioCARS.Api.props" />
+</Project>
