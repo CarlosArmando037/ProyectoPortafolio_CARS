@@ -11,7 +11,7 @@ import { environment } from '../../environments/environment.development';
 
 export class ProyectosService {
 
-  url='drivers';
+  url='Misproyectos';
 
   constructor(private http: HttpClient) { }
 
@@ -19,6 +19,6 @@ export class ProyectosService {
   //   return this.http.get<Driver[]>(`${environment.apiUrl}/${this.url}`);
   // }
   public getDriver():Observable<MisproyectosModel[]>{
-    return this.http.get<MisproyectosModel[]>(`${environment.apiUrl}`);
+    return this.http.get<MisproyectosModel[]>(`${environment.apiUrl}`+this.url);
   }
 }
